@@ -13,6 +13,11 @@ img{
   margin-bottom: 1%;
 }
 
+.card-person{
+    border: 3px solid purple;
+    border-radius: 50%;
+}
+
 .row{
   display: flex;  
   flex: 1;
@@ -123,4 +128,20 @@ img{
     border-radius:50px;
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
+}
+
+
+
+.col-divider {
+    position: relative;
+}
+.col-divider::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 0;
+    width: 3px;
+    background-color: darkgray;
+    height: 80%;
 }
