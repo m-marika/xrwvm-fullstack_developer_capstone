@@ -9,13 +9,16 @@ from .models import CarMake, CarModel
 class CarModelInline(admin.StackedInline):
     model = CarModel
 
+
 # CarModelAdmin class
 class CarModelAdmin(admin.ModelAdmin):
     list_display = ['name', 'type']
 
+
 # CarMakeAdmin class with CarModelInline
 class CarMakeAdmin(admin.ModelAdmin):
     inlines = [CarModelInline]
+
 
 # Register models here
 admin.site.register(CarMake, CarMakeAdmin)
